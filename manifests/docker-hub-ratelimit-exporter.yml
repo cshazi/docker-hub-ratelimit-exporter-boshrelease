@@ -1,0 +1,43 @@
+---
+name: docker-hub-ratelimit-exporter
+
+addons:
+- name: bpm
+  jobs:
+  - name: bpm
+    release: bpm
+
+instance_groups:
+- name: docker-hub-ratelimit-exporter
+  azs: [z1, z2, z3]
+  instances: 1
+  vm_type: default
+  stemcell: default
+  networks: [{name: default}]
+  jobs:
+  - name: docker-hub-ratelimit-exporter
+    release: docker-hub-ratelimit-exporter
+    properties: {}
+
+variables: []
+
+stemcells:
+- alias: default
+  os: ubuntu-xenial
+  version: latest
+
+update:
+  canaries: 1
+  canary_watch_time: 1000-60000
+  update_watch_time: 1000-60000
+  max_in_flight: 1
+  serial: false
+
+releases:
+- name: bpm
+  version: 1.1.8
+  url: git+https://github.com/cloudfoundry/bpm-release
+- name: docker-hub-ratelimit-exporter
+  version: create  # TODO: update after first final release
+  url: .           # TODO: update after first final release
+  # sha1:            TODO: update after first final release

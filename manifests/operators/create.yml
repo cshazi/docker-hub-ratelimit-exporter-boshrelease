@@ -1,0 +1,7 @@
+---
+- type: replace
+  path: /releases/name=docker-hub-ratelimit-exporter
+  value:
+    name: docker-hub-ratelimit-exporter
+    version: create
+    url: file://.

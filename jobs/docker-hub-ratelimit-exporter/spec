@@ -1,0 +1,6 @@
+---
+name: docker-hub-ratelimit-exporter
+packages: []
+templates:
+  ignoreme: ignoreme
+properties: {}
