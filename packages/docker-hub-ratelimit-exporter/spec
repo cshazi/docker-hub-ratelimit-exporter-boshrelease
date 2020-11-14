@@ -1,0 +1,6 @@
+---
+name: docker-hub-ratelimit-exporter
+dependencies:
+- golang-1.15-linux
+files:
+- gopath/**/*

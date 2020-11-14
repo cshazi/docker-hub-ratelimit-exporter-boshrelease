@@ -1,0 +1,3 @@
+[submodule "src/gopath/src/github.com/cshazi/docker-hub-ratelimit-exporter"]
+	path = src/gopath/src/github.com/cshazi/docker-hub-ratelimit-exporter
+	url = https://github.com/cshazi/docker-hub-ratelimit-exporter
