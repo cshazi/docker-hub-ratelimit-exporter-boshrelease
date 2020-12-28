@@ -6,6 +6,7 @@ dev_releases
 blobs/*
 .blobs
 .dev_builds
+.final_builds
 .vagrant
 .idea
 .DS_Store
