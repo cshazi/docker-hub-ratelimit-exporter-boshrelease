@@ -1,0 +1,27 @@
+name: docker-hub-ratelimit-exporter
+version: 1.0.0
+commit_hash: 2a1fcfa
+uncommitted_changes: false
+jobs:
+- name: docker-hub-ratelimit-exporter
+  version: 1d800af60050f8690dd4ab32ca32a7ce5dc3e818571d23172a31b2a92437e600
+  fingerprint: 1d800af60050f8690dd4ab32ca32a7ce5dc3e818571d23172a31b2a92437e600
+  sha1: sha256:ba1eab09cd07d201bb3d1cdfc043573fb7c13146377530f438e4a4796b7059c5
+  packages:
+  - docker-hub-ratelimit-exporter
+packages:
+- name: docker-hub-ratelimit-exporter
+  version: f871b65486038118dd21bae00a57daa99de03d7a48489930a94b0829288731df
+  fingerprint: f871b65486038118dd21bae00a57daa99de03d7a48489930a94b0829288731df
+  sha1: sha256:b19513c3298d4250b05334793c70dcabfb5eac546d8f446cccfe3fc52ffbd117
+  dependencies:
+  - golang-1.15-linux
+- name: golang-1.15-linux
+  version: 4511f5374eaf631a11fe4c4f9e894e74fd6a4dddfd61fe5870a4503bd441e458
+  fingerprint: 4511f5374eaf631a11fe4c4f9e894e74fd6a4dddfd61fe5870a4503bd441e458
+  sha1: sha256:8977268b810146a9cba4247339ed13c0cbc4713c7fa53f8ec85e2c6933e84cf2
+  dependencies: []
+license:
+  version: 6692d9b653dc45ff39078b1b8677aa3dd767e8e722bc7bde5738432f11b4a5c7
+  fingerprint: 6692d9b653dc45ff39078b1b8677aa3dd767e8e722bc7bde5738432f11b4a5c7
+  sha1: sha256:93b3b1449c7078017461eb29e73cdf08d0d5bd386afa58e087cb4db2187214d4
